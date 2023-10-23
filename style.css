@@ -1,0 +1,168 @@
+@font-face {
+    font-family: myFont;
+    src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(210, 60%, 98%);
+    font-family: myFont;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 4em 0;
+    background-color: #fff;
+    padding: 2em 2em 0 2em;
+    width: 80%;
+    max-width: 730px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 30px hsl(211, 68%, 94%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_1 {
+    display: flex;
+    gap: 10px;
+
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: hsl(224, 21%, 14%);
+}
+
+.noti_num {
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    padding: 1px 10px; 
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.mark_btn {
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+
+
+.main_div {
+    margin: 2em 0 0 0 ;
+}
+
+.noti_div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding: 0.8em 0 0.8em 1.2em; 
+    border-radius: 10px;
+}
+
+.first_noti,
+.second_noti,
+.third_noti {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.noti_div_1 {
+    align-self: center;
+}
+
+.pfp {
+    width: 45px;
+}
+
+.notification {
+    color: hsl(219, 12%, 42%);
+    font-weight: 500;
+}
+
+.pfp_name {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+}
+
+
+.post_name {
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+}
+
+.red_dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.post_name:hover, .mark_btn:hover, .pfp_name:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.third_noti > .post_name,
+.seventh_noti > .post_name {
+    color: hsl(219, 85%, 26%);  
+}
+
+.post_time {
+    color: hsl(219, 14%, 63%);
+}
+
+.first_noti > .pfp, .second_noti > .pfp, .third_noti > .pfp, 
+.fourth_noti > .pfp, .fifth_noti > .pfp, .sixth_noti > .pfp,
+.seventh_noti > .pfp, .my_pic {
+    align-self: flex-start;
+}
+
+.message_div {
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 1em;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: hsl(219, 12%, 42%);
+    border-radius: 4px;
+}
+
+.message_div:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.fifth_noti > .noti_div_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+
+.my_pic {
+    width: 45px;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: -30px;
+}
+
+@media (max-width: 600px) {
+   .container {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+   }
+}
